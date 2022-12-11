@@ -8,6 +8,7 @@ video.width = 128;
 video.height = 128;
 
 const getPixels = (img) => {
+  context.clearRect(0, 0, img.width, img.height);
   context.drawImage(img, 0, 0, img.width, img.height);
 
   return context.getImageData(0, 0, img.width, img.height).data;
