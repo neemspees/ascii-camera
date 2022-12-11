@@ -90,7 +90,6 @@ const render = (video) => {
 
   setTimeout(() => {
     requestAnimationFrame(() => render(video));
-    alert('still drawing');
   }, 1000 / 15);
 };
 
